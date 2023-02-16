@@ -1,0 +1,243 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.intro{
+    font-family: 'Outfit', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    padding: max(12vw, 120px) 10px;
+    background-color:#1A2A33; 
+}
+.intro card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#pick{
+    margin-top: 40px;
+    padding: 20px;
+    border-radius: 15px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0px 6px 0px 0px #162125;
+    color: #A8BFC9;
+    background-color: #1F3641;
+}
+.intro h1{
+    font-size: 16px;
+    font-weight: 700;
+    color: #A8BFC9;
+}
+.XO-div{
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    background-color: #1A2A33;
+}
+.XO{
+    width: 100%;
+    padding:  10px ;
+    border-radius: 10px;
+    fill: #A8BFC9;
+}
+.active{
+    fill:#1A2A33;
+    background-color: #A8BFC9;  
+}
+h2{
+    margin-top: 15px;
+    font-size:  15px;
+    font-weight: 700;
+    color: #A8BFC9;
+}
+.intro button{
+    font-family: 'Outfit', sans-serif;
+    margin-top: 20px;
+    font-size: 20px;
+    padding: 15px 30px;
+    border-radius: 15px;
+    width: 100%;
+    text-align: center;
+    border: none;
+    color: #1A2A33;
+}
+#yellow{
+    margin-top: 35px;
+    background-color: #F2B137;
+    box-shadow: 0 7px 0 0 #b98422;
+}
+#yellow:hover{
+    background-color: #FFC860;
+}
+#cyan{
+    background-color: #31C3BD;
+    box-shadow: 0 7px 0 0 #156865;
+}
+#cyan:hover{
+    background-color: #65E9E4;
+}
+
+
+
+.game{
+    font-family: 'Outfit', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    padding: min(3vw, 130px) 15px 0 15px;
+    background-color:#1A2A33;
+    display: none;
+}
+.game card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#turn{
+    padding: 10px 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #A8BFC9;
+    background-color: #1F3641;
+    box-shadow: 0 4px 0 0 #162125;
+}
+#turn svg{
+    width: 20px;
+    height: auto;
+}
+#Xsvg{
+    color: red;
+}
+#Osvg{
+    display: none;
+}
+.restart{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #A8BFC9;
+    box-shadow: 0 4px 0 0 #40494d;
+    cursor: pointer;
+}
+.desk{
+    width: 100%;
+    margin-top: 60px;
+    display: grid;
+    grid: auto-flow / 1fr 1fr 1fr;
+    gap: 20px;
+}
+.grid-item{
+    border-radius: 10px;
+    aspect-ratio: 1 / 1;
+    box-shadow: 0 7px 0 0 #162125;
+    background-color: #1F3641;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.grid-item img{
+    width: 60%;
+}
+footer{
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+.output{
+    width: 100%;
+    padding: 13px;
+    border-radius: 10px;
+    font-size: max(1.3vw, 15px);
+    font-weight: 500;
+    text-align: center;
+    color: #1A2A33;
+}
+.output number{
+    font-size: max(1.5vw, 15px);
+}
+#you{
+    background-color: cyan;
+
+}
+#ties{
+    background-color: #A8BFC9;
+}
+#CPU{
+    background: #F2B137;
+}
+
+
+
+.finish{
+    font-family: 'Outfit', sans-serif;
+    width: 100%;
+    height: auto;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #A8BFC9;
+    background-color: #1F3641;
+    position: absolute;
+    top: calc(100vh / 2.7);
+    display: none
+}
+.finish p{
+    font-size: min(5vw, 25px);
+}
+.finish .takes{
+    margin-top: min(6vw, 20px);
+    font-size: min(5vw, 25px);
+    gap: 10px;
+    display: flex;
+}
+.finish img{
+    width: min(10vw, 50px);
+}
+#finish-x{
+    display: none;
+}
+#finish-o{
+    display: none;
+}
+.finish-buttons{
+    display: flex;
+    gap: 10px;
+}
+.finish button{
+    font-family: 'Outfit', sans-serif;
+    margin-top: min(10vw, 50px);
+    font-size: min(5vw, 25px);
+    padding: 10px 25px;
+    border-radius: 15px;
+    border: none;
+    color: #1A2A33;   
+}
+#finish-quit{
+    background-color: #A8BFC9;
+    box-shadow: 0 4px 0 0 #748992;
+}
+#finish-next{
+    background-color: #F2B137;
+    box-shadow: 0 4px 0 0 rgb(206, 141, 21);
+}
