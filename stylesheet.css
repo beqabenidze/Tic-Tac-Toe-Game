@@ -90,7 +90,7 @@ h2{
     font-family: 'Outfit', sans-serif;
     width: 100vw;
     height: 100vh;
-    padding: min(3vw, 130px) 15px 0 15px;
+    padding: min(1vw, 130px) 15px 0 15px;
     background-color:#1A2A33;
     display: none;
 }
